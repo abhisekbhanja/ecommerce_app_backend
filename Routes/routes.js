@@ -60,7 +60,7 @@ router.post("/login",(req,res)=>{
 
   })
   .catch((err)=>{
-    console.log(err)}
+    res.status(401).send("invalid credentials")}
     )
 })
 
